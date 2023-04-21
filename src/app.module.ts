@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
 import { EventEmitterModule } from '@nestjs/event-emitter'
-import { AppController } from './app.controller'
-import { AppService } from './app.service'
-import { OrderModule } from './order/order.module'
+import { AppController } from 'src/app.controller'
+import { AppService } from 'src/app.service'
 import { NotificationModule } from './notification/notification.module'
+import { OrderModule } from './order/order.module'
 
 @Module({
     imports: [
