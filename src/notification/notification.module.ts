@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common'
+import { OrderCreatedListener } from 'src/notification/listeners/order-created.listener'
 import { NotificationService } from './notification.service'
-import { NotificationController } from './notification.controller'
 
 @Module({
-    controllers: [NotificationController],
-    providers: [NotificationService],
+    controllers: [],
+    providers: [NotificationService, OrderCreatedListener],
 })
 export class NotificationModule {}
